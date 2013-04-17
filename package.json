@@ -1,23 +1,23 @@
 {
   "name": "js-unit-test-demo",
   "version": "0.0.0",
-  "description": "ERROR: No README.md file found!",
+  "description": "",
   "main": "Gruntfile.js",
   "directories": {
     "test": "test"
   },
-  "dependencies": {
-  },
+  "dependencies": {},
   "devDependencies": {
     "bower": "~0.8.6",
     "grunt": "~0.4.1",
-    "grunt-contrib-qunit": "~0.2.1"
-    "grunt-contrib-connect": "~0.3.0"
+    "grunt-contrib-qunit": "~0.2.1",
+    "grunt-contrib-connect": "~0.3.0",
+    "connect": "~2.7.6"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "grunt test"
   },
-  "repository": "",
-  "author": "",
+  "repository": "git@github.com:christensena/js-unit-test-demo.git",
+  "author": "Alan Christensen",
   "license": "BSD"
 }

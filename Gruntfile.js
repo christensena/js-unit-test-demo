@@ -7,7 +7,8 @@ module.exports = function(grunt) {
       all: {
         options: {
           urls: [
-            'http://localhost:8000/test/hello-world-test.html'
+            'http://localhost:8000/test/hello-world-test.html',
+            'http://localhost:8000/test/multiplier-fixture.html'
           ]
         }
       }
@@ -20,11 +21,11 @@ module.exports = function(grunt) {
         }
       }
     }
-});
+  });
 
-grunt.loadNpmTasks('grunt-contrib-connect');
-grunt.loadNpmTasks('grunt-contrib-qunit');
+  grunt.loadNpmTasks('grunt-contrib-connect');
+  grunt.loadNpmTasks('grunt-contrib-qunit');
 
-// A convenient task alias.
-grunt.registerTask('test', ['connect', 'qunit']);
+  // A convenient task alias.
+  grunt.registerTask('test', ['connect', 'qunit']);
 };
