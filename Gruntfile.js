@@ -4,14 +4,27 @@ module.exports = function(grunt) {
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
     qunit: {
-      all: ['test/**/*.html']
+      all: {
+        options: {
+          urls: [
+            'http://localhost:8000/test/hello-world-test.html'
+          ]
+        }
+      }
+    },
+    connect: {
+      server: {
+        options: {
+          port: 8000,
+          base: '.'
+        }
+      }
     }
-  });
+});
 
-  // Load the plugin that provides the "uglify" task.
-  grunt.loadNpmTasks('grunt-contrib-qunit');
+grunt.loadNpmTasks('grunt-contrib-connect');
+grunt.loadNpmTasks('grunt-contrib-qunit');
 
-  // Default task(s).
-  grunt.registerTask('default', ['qunit']);
-
+// A convenient task alias.
+grunt.registerTask('test', ['connect', 'qunit']);
 };
