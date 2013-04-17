@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Complex Form QUnit Example</title>
+  <link rel="stylesheet" href="/components/qunit/qunit.css" />
+  <script src="/components/jquery/jquery.js"></script>
+  <script src="/examples/multiplier.js"></script>
+</head>
+<body>
+  <div id="qunit"></div>
+  <div id="qunit-fixture">
+
+    <form method="post">
+
+      <p id="math-sentence">
+        <input type="text" id="left" value="1">
+        <span>x<span> 
+        <input type="text" id="right" value="1">
+        <span> = <span id="result">1</span>
+      </p>
+      <button id="calculate" type="button">Calculate</button>
+
+    </form>
+  </div>
+  <script src="/components/qunit/qunit.js"></script>
+  <script src="multiplier-test.js"></script>
+</body>
+</html>

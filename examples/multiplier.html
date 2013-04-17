@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Simple Math Example</title>
+  <script src="/components/jquery/jquery.js"></script>
+  <script src="multiplier.js"></script>
+  <script>
+    // document ready
+    $(function() {
+        wireUpMultiplier($('#left'), $('#right'), $('#result'), $('#calculate'));
+    })
+  </script>
+
+</head>
+<body>
+    <form method="post">
+
+      <p id="math-sentence">
+        <input type="text" id="left" value="1">
+        <span>x<span> 
+        <input type="text" id="right" value="1">
+        <span> = <span id="result">1</span>
+      </p>
+      <button id="calculate" type="button">Calculate</button>
+
+    </form>
+  </div>
+</body>
+</html>
