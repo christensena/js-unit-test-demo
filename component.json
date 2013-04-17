@@ -1,0 +1,16 @@
+{
+  "name": "js-unit-test-demo",
+  "version": "0.0.0",
+  "devDependencies": {
+    "mocha": "~1.9.0"
+  },
+  "dependencies": {
+    "mocha": "~1.9.0",
+    "qunit": "~1.11.0"
+  },
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "components"
+  ]
+}
