@@ -3,12 +3,14 @@ module.exports = function(grunt) {
   // Project configuration.
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
+
     qunit: {
       all: {
         options: {
           urls: [
-            'http://localhost:8000/test/hello-world-test.html',
-            'http://localhost:8000/test/multiplier-fixture.html'
+            'http://localhost:8000/qunit/hello-world-test.html',
+            'http://localhost:8000/qunit/multiplier-fixture.html']
+        }
           ]
         }
       }

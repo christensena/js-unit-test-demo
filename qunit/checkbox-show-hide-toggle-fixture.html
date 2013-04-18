@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Complex Form QUnit Example</title>
+  <link rel="stylesheet" href="/components/qunit/qunit.css" />
+  <script src="/components/jquery/jquery.js"></script>
+  <script src="/examples/checkbox-show-hide-toggle.js"></script>
+</head>
+<body>
+  <div id="qunit"></div>
+  <div id="qunit-fixture">
+
+    <form method="post">
+
+      <label>Show-Hide Toggle Checkbox
+          <input type="checkbox" name="test-checkbox" id="test-checkbox" checked/>
+      </label>
+
+      <fieldset id="test-container">
+        <legend>Container that should disappear if checkbox unchecked</legend>
+
+        <ul id="list-container">
+          <li>
+            <input type="text" name="entry1"/>
+          </li>
+          <li>
+            <input type="text" name="entry1"/>
+          </li>
+          <li>
+            <input type="text" name="entry1"/>
+          </li>
+        </ul>
+
+      </fieldset>
+      
+      <input type="submit"/>
+    </form>
+  </div>
+  <script src="/components/qunit/qunit.js"></script>
+  <script src="checkbox-show-hide-toggle-test.js"></script>
+</body>
+</html>
