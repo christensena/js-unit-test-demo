@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Element List Manipulation Example</title>
+  <script src="/components/jquery/jquery.js"></script>
+  <script src="row-manager.js"></script>
+  <script>
+    // document ready
+    $(function() {
+        wireUpRowManager($('#item-list'), $('#add-button'), $('#remove-button'), $('#row-count'));
+    });
+  </script>
+</head>
+<body>
+    <form method="post">
+
+      <button type="button" id="add-button">Add row</button>
+      <button type="button" id="remove-button">Remove row</button>
+      <ul id="item-list">
+      </ul>
+      <p>Row count:<span id="row-count">0</span></p>
+    </form>
+  </div>
+</body>
+</html>
