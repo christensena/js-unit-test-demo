@@ -11,12 +11,12 @@
 
         removeButtonEl.on('click', function(e) {
             itemListEl.find('li:last').remove();
-            //updateRowCount(itemListEl, rowCountEl);
+            updateRowCount(itemListEl, rowCountEl);
         });
     }
 
     function updateRowCount(itemListEl, rowCountEl) {
-        rowCountEl.text(itemListEl.find('li').length);       
+        rowCountEl.text(itemListEl.find('li').length);    
     }
 
     // expose to the world
