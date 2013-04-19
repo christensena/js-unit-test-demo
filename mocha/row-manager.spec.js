@@ -36,6 +36,20 @@ describe('row manager', function() {
                 expect(rowCountEl.text()).to.equal('1');
             })
         })
+
+        describe('removing a row', function() {
+            beforeEach(function() {
+                removeButtonEl.click();
+            })
+
+            it('there should be no rows', function() {
+                expect(itemListEl.find('li')).to.have.length(0)
+            })
+
+            it('row count should be 0', function() {
+                expect(rowCountEl.text()).to.equal('0')
+            })
+        })
     })
 
     describe('one existing row', function() {
@@ -50,7 +64,7 @@ describe('row manager', function() {
             })
 
             it('there should be no rows', function() {
-                expect(itemListEl.find('li').length).to.equal(0)
+                expect(itemListEl.find('li')).to.have.length(0)
             })
 
             it('row count should be 0', function() {
