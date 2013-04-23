@@ -4,7 +4,7 @@ How to get going:
 
 1. install node.js
 2. install bower ```npm install bower -g```
-3. install grunt ```npm install grunt -g```
+3. install grunt ```npm install grunt-cli -g```
 2. pull down this source code locally
 3. open a commandline at the root of the repo and type:
   ```
@@ -17,4 +17,4 @@ How to get going:
      grunt
   ```
 
-NOTE: Not tested on Windows
+Tested on OS X Mountain Lion and Windows 8
