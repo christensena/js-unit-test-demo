@@ -3,6 +3,7 @@
 How to get going:
 
 1. install node.js
+2. install bower ```npm install bower -g```
 2. pull down this source code locally
 3. open a commandline at the root of the repo and type:
   ```
