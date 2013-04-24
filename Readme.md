@@ -17,4 +17,9 @@ How to get going:
      grunt
   ```
 
+5. To run tests or examples in a browser, you can use the simple http server: 
+  ``` 
+    node static-server.js 
+  ```
+
 Tested on OS X Mountain Lion and Windows 8
