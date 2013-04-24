@@ -2,7 +2,7 @@
 
 How to get going:
 
-1. install node.js
+1. install [node.js](http://nodejs.org/)
 2. install bower ```npm install bower -g```
 3. install grunt ```npm install grunt-cli -g```
 2. pull down this source code locally
